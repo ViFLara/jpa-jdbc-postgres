@@ -1,0 +1,5 @@
+package com.devsuperior.jparepositoryclass.controllers;
+
+public class UserController {
+
+}

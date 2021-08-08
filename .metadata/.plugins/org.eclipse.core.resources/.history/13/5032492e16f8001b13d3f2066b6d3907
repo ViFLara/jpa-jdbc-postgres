@@ -1,0 +1,5 @@
+package com.devsuperior.jparepositoryclass.repositories;
+
+public class UserRepository {
+
+}
