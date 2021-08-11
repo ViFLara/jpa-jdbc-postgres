@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
@@ -14,7 +15,7 @@ import java.util.List;
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
-public class Topic {
+public class Topic implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -33,12 +34,12 @@ public class Topic {
     @Column(nullable = false)
     private TopicStatus status = TopicStatus.NOT_ANSWERED;
 
-    @Column(nullable = false)
+/*    @Column(nullable = false)
     private User author;
 
     @Column(nullable = false)
     private Course course;
 
     @Column(nullable = false)
-    private List<Answer> answers = new ArrayList<>();
+    private List<Answer> answers = new ArrayList<>();*/
 }

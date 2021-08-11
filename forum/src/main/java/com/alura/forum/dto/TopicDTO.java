@@ -33,7 +33,7 @@ public class TopicDTO {
     @Column(nullable = false)
     private String message;
 
-    @Column(nullable = false)
-    private LocalDateTime createDate = LocalDateTime.now();
+/*    @Column(nullable = false)
+    private LocalDateTime createDate = LocalDateTime.now();*/
 
 }

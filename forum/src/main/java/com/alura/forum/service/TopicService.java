@@ -12,16 +12,16 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
-@AllArgsConstructor(onConstructor = @__(@Autowired))
 public class TopicService {
 
-    private final TopicRepository topicRepository;
+    @Autowired
+    private TopicRepository topicRepository;
     private final TopicMapper topicMapper = TopicMapper.INSTANCE;
 
-    public List<TopicDTO> listAll() {
+  /*  public List<TopicDTO> listAll() {
         return topicRepository.findAll()
                 .stream()
                 .map(topicMapper::toDTO)
                 .collect(Collectors.toList());
-    }
+    }*/
 }
